@@ -1,0 +1,65 @@
+
+<div class="col-md-12">
+ <div class="col-md-12 header"><span>Employee</span></div>
+ <div class="col-md-12">
+	 <div class="col-md-2" style="text-align:left;">
+		 <button class="btn btn-danger" ng-click="home()">Home&nbsp;<i class="glyphicon glyphicon-home"></i></button>
+	 </div>
+	<div class="col-md-2 pull-right" style="text-align:right;">
+	<button class="btn btn-primary" ng-click="addNew()">Add Employee</button>
+	</div>
+</div>
+<div class="col-md-12">
+	<div class="col-md-offset-1 col-md-10 welcomeDiv">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th class="project" ng-hide="true">
+						Employee Id
+					</th>
+					<th class="project">
+						Employee Name
+					</th>
+					<th class="project">
+						Contact Number
+					</th>
+					<th class="project">
+						Designation
+					</th>
+					<th class="project">
+						Skill Sets
+					</th>
+					<th class="project">
+						
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="employee in employeeArray">
+				<td class="id" ng-hide="true">
+					{{employee._id}}
+				</td>
+				<td>
+					{{employee.empName}}
+				</td>
+				<td>
+					{{employee.empContact}}
+				</td>
+				<td>
+					{{employee.empDesignation}}
+				</td>
+				<td>
+					{{employee.empSkills}}
+				</td>
+				<td>
+					<span ng-click="edit($event)" style="cursor:pointer;" class="glyphicon glyphicon-edit"></span>
+					<span ng-click="delete($event)" style="cursor:pointer;" class="glyphicon glyphicon-remove"></span>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</div>
+
+

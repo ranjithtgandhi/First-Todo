@@ -1,0 +1,41 @@
+
+<div class="col-md-12">
+  <div class="col-md-12" style="margin-top:3%;">
+  <div class="col-md-4 col-md-offset-1" ng-click="project()" style="height:30%;text-align:center;">
+	<div class="dashboardHeader">
+	   Project
+	</div>
+	<div class="dashboardBody">
+	   <div class="col-md-12" ng-repeat="proj in projSelectArr"><span class="dashContent"  ng-bind="proj.projectName"></span></div>
+	</div>
+  </div>
+ <div class="col-md-4 col-md-offset-2" ng-click="employee()" style="height:30%;text-align:center;">
+	<div class="dashboardHeader">
+	   Employees
+	</div>
+	<div class="dashboardBody">
+		<div class="col-md-12"  ng-repeat="emp in empSelectArr">	<span class="dashContent" ng-bind="emp.empName"><br/></span></div>
+	</div>
+  </div>
+   <div class="col-md-12" style="margin-top:3%;">
+  <div class="col-md-4 col-md-offset-1" ng-click="task()" style="height:30%;text-align:center;">
+	<div class="dashboardHeader">
+	   Tasks
+	</div>
+	<div class="dashboardBody">
+		<div class="col-md-12" ng-repeat="task in taskSelectArray">	<span class="dashContent"  ng-bind="task.taskName"><br/></span></div>
+	</div>
+  </div>
+ <div class="col-md-4 col-md-offset-2" style="height:30%;text-align:center;">
+	<div class="dashboardHeader">
+
+	</div>
+	<div class="dashboardBody">
+
+	</div>
+  </div>
+  </div>
+  </div>
+</div>
+
+

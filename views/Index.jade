@@ -1,0 +1,12 @@
+
+
+html
+   head
+      title English
+      script(type="text/javascript" src="./Scripts/Require.js" data-main="./require-main.js")
+   body(style="background-color: #15191F;overflow:hidden;")
+      div(ng-app="myApp")
+        div(ng-show="true", class="loadingParent")
+            div(class="loading")
+		iframe(id="printFrame" ,style="display:none;")			
+		ng-view(ng-show="false")

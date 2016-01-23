@@ -1,0 +1,28 @@
+<div class="modal-header">
+            <h3 class="modal-title">Projects</h3>
+        </div>
+        <div class="modal-body">
+            <form role="form">
+				<div class="form-group">
+					<label for="projName">Project Name </label>
+					<input type="text" class="form-control" ng-model="projName" id="projName"/>
+				</div>
+				<div class="form-group">
+					<label for="projStdate">Project Start Date</label>
+					<input type="text" class="form-control" ng-model="projStdate" id="projStdate"/>
+				</div>
+				<div class="form-group">
+					<label for="projEndate">Project End Date </label>
+					
+					<input type="text" class="form-control" ng-model="projEndate" id="projEndate"/>
+				</div>
+				<div class="form-group">
+					<label for="projCliName">Project Client Name </label>
+					<input type="text" class="form-control" ng-model="projCliName"  id="projCliName"/>
+				</div>
+			</form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="save()">Save</button>
+			<button class="btn btn-primary" ng-click="ok()">Cancel</button>
+        </div>

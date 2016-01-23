@@ -1,0 +1,10 @@
+html
+	title Todo
+	script(type="text/javascript", src="./Scripts/Require.js", data-main="./require-main.js")
+body(style="") 
+	div(ng-app="myApp")
+		div(ng-show="$root.loading", class="loading")
+		iframe(id="printFrame", style="display:none;")
+		div(class="pull-right col-md-2" style="margin-top:2%;")
+			toggle-switch(ng-model="$root.theme", ng-show="!$root.loading", class="themeToggle", on-label="Dark" ,off-label="Light")
+		ng-view(ng-show="!$root.loading")
