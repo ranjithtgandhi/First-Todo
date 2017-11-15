@@ -10,7 +10,11 @@
     "jade": "^1.9.2",
     "mongoose": "^4.0.1",
     "http": "^0.0.0",
-    "path": "^0.11.14"
+    "path": "^0.11.14",
+    "express-jwt": "^5.1.0",
+    "express-session": "^1.15.2",
+    "bcryptjs": "^2.4.3",
+     "lodash": "^4.17.4"
    },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +23,6 @@
   "keywords": [
     "TodoTask"
   ],
-  "author": "ARUN VIGNESH ",
+  "author": "Ranjith Kumar",
   "license": "ISC"
 }
